@@ -3235,6 +3235,51 @@ dependencies = [
 ]
 
 [[package]]
+name = "ic-doge-adapter"
+version = "0.1.0"
+dependencies = [
+ "bitcoin",
+ "clap 3.0.0-beta.2",
+ "futures",
+ "hex",
+ "prost",
+ "prost-build",
+ "rand 0.8.3",
+ "serde",
+ "serde_json",
+ "slog",
+ "slog-term",
+ "thiserror",
+ "tokio",
+ "tokio-socks",
+ "tonic",
+ "tonic-build",
+]
+
+[[package]]
+name = "ic-doge-consensus"
+version = "0.1.0"
+dependencies = [
+ "ic-interfaces",
+ "ic-logger",
+ "ic-metrics",
+ "ic-replicated-state",
+ "ic-types 0.8.0",
+ "prometheus",
+ "slog",
+ "thiserror",
+]
+
+[[package]]
+name = "ic-doge-validation"
+version = "0.1.0"
+dependencies = [
+ "bitcoin",
+ "csv",
+ "thiserror",
+]
+
+[[package]]
 name = "ic-canister-client"
 version = "0.8.0"
 dependencies = [
