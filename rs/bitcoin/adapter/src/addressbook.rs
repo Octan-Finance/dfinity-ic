@@ -110,7 +110,8 @@ impl AddressBook {
 
         if seed_queue.is_empty() && known_addresses.is_empty() {
             slog::debug!(
-                self.logger,
+                logger,
+                "{}",
                 config
             );
             return Err(AddressBookError::NoAddressesFound);
