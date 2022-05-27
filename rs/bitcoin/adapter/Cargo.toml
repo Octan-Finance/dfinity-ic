@@ -6,7 +6,7 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bitcoin = { version = "0.27.0", features = ["default", "use-serde", "rand"] }
+bitcoin = { git = "https://github.com/Octan-Finance/rust-litecoin", branch = "litecoin-compatible", features = ["default", "use-serde", "rand"] }
 clap = "=3.0.0-beta.2"
 futures = "0.3.17"
 hex = "0.4.2"
